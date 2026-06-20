@@ -30,7 +30,7 @@ Seongheon Park*, **<u>Hyuk Kwon*</u>**, Kwanghoon Sohn, Kibok Lee
 CVPRW, 2024. [arXiv:2405.20829](https://arxiv.org/pdf/2405.20829)
 
 ## 🎓 Education
-### Integrated M.S./Ph.D. Student**
+### Integrated M.S./Ph.D. Student
 Department of Statistics and Data Science, Yonsei University, 2022–Present
 ### B.S.
 Department of Applied Statistics, Yonsei University, University Name, 2016-2022 
