@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-## About Me
 
 I am an AI research graduate student interested in vision-language models, model selection, and efficient multimodal learning.
 
