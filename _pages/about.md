@@ -7,43 +7,44 @@ redirect_from:
   - /about.html
 ---
 
+I am a Ph.D. student at [Yonsei University Machine Learning Lab](https://ml.yonsei.ac.kr/), under the guidance of Prof. [Kibok Lee](https://sites.google.com/site/kibok90). 
+My research focuses on adapting vision–language models to real-world downstream tasks, with an emphasis on transfer learning, representation learning, and model reliability. 
+Recently, I have been extending my work to the video domain.
 
-I am an AI research graduate student interested in vision-language models, model selection, and efficient multimodal learning.
+Contact: kh12043@yonsei.ac.kr
 
-## Research Interests
+## 🔬 Research Interests
 
+- Open-world Learning
 - Vision-Language Models
-- Model Selection
-- Efficient Multimodal Learning
-- Multimodal Foundation Models
+- (Automatic) Model Evaluation
 
-## Publications
+## 📝 Publications
 
-- **Paper Title**, Conference or Under Review, Year.  
-  Authors.  
-  [PDF](/files/paper.pdf) / [Code](https://github.com/your-id/your-repo)
+### Enhancing Continual Learning of Vision-Language Models via Dynamic Prefix Weighting
 
-## Projects
+Hyeonseo Jang, **<u>Hyuk Kwon**<u>, Kibok Lee
 
-### Rethinking Language-Only Vision-Language Model Selection
+CVPR, 2026. [arXiv:2604.18075](https://arxiv.org/pdf/2604.18075)
 
-Brief description of the project.
+### Automated Model Evaluation for Object Detection via Prediction Consistency and Reliability
 
-### Dynamic Prefix Weighting for Continual Learning
+Seungju Yoo, **<u>Hyuk Kwon**<u>, Joong-Won Hwang, Kibok Lee
 
-Brief description of the project.
+ICCV (Oral), 2025. [arXiv:2508.12082](https://arxiv.org/pdf/2508.12082)
 
-## Education
+### Rethinking Open-World Semi-Supervised Learning: Distribution Mismatch and Inductive Inference
 
-- M.S./Ph.D. Student, Department or Lab Name, University Name, Year–Present
-- B.S., Department Name, University Name, Year
+Seongheon Park, **<u>Hyuk Kwon**<u>, Kwanghoon Sohn, Kibok Lee
+
+CVPRW, 2024. [arXiv:2405.20829](https://arxiv.org/pdf/2405.20829)
+
+## 🎓 Education
+
+- **Integrated M.S./Ph.D. Student**, Department of Statistics and Data Science, Yonsei University, 2022–Present
+- **B.S.**, Department of Applied Statistics, Yonsei University, University Name, 2016-2022 
 
 ## Experience
 
 - Research Assistant, Lab Name, Year–Present
 
-## Contact
-
-- Email: kh1204350@gmail.com
-- GitHub: [kh1204350](https://github.com/kh1204350)
-- Google Scholar: add later
