@@ -22,27 +22,24 @@ Contact: kh12043@yonsei.ac.kr
 ## 📝 Publications
 
 ### Enhancing Continual Learning of Vision-Language Models via Dynamic Prefix Weighting
-
 Hyeonseo Jang, **<u>Hyuk Kwon</u>**, Kibok Lee
-
 CVPR, 2026. [arXiv:2604.18075](https://arxiv.org/pdf/2604.18075)
 
 ### Automated Model Evaluation for Object Detection via Prediction Consistency and Reliability
-
 Seungju Yoo, **<u>Hyuk Kwon</u>**, Joong-Won Hwang, Kibok Lee
-
 ICCV (Oral), 2025. [arXiv:2508.12082](https://arxiv.org/pdf/2508.12082)
 
 ### Rethinking Open-World Semi-Supervised Learning: Distribution Mismatch and Inductive Inference
-
 Seongheon Park*, **<u>Hyuk Kwon*</u>**, Kwanghoon Sohn, Kibok Lee
-
 CVPRW, 2024. [arXiv:2405.20829](https://arxiv.org/pdf/2405.20829)
 
 ## 🎓 Education
 
-- **Integrated M.S./Ph.D. Student**, Department of Statistics and Data Science, Yonsei University, 2022–Present
-- **B.S.**, Department of Applied Statistics, Yonsei University, University Name, 2016-2022 
+### Integrated M.S./Ph.D. Student**
+Department of Statistics and Data Science, Yonsei University, 2022–Present
+
+### B.S.
+Department of Applied Statistics, Yonsei University, University Name, 2016-2022 
 
 ## Experience
 
