@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 I am a Ph.D. student at [Yonsei University Machine Learning Lab](https://ml.yonsei.ac.kr/), under the guidance of Prof. [Kibok Lee](https://sites.google.com/site/kibok90). 
-My research focuses on how visual models can adapt to new tasks and distributions, and how their performance and reliability can be evaluated in such settings.
+My research focuses on how visual models learn and adapt across diverse tasks and settings, and how to evaluate their performance and reliability.
 Recently, I have started working on world models.
 
 Contact: kh12043@yonsei.ac.kr
