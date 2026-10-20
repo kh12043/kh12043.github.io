@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<section class="intro{% if site.photo %} has-photo{% endif %}">
+  <div class="intro-text">
+    <h1 class="name">{{ site.author }}</h1>
+    <p>
+      I am a Ph.D. student at <a href="https://ml.yonsei.ac.kr/">Yonsei University Machine Learning Lab</a>,
+      under the guidance of Prof. <a href="https://sites.google.com/site/kibok90">Kibok Lee</a>.
+      My research focuses on how visual models learn and adapt across diverse tasks and settings,
+      and how to evaluate their performance and reliability.
+      Recently, I have started working on <strong>world models</strong>.
+    </p>
+    <p class="interests">
+      <span class="muted">Research interests:</span>
+      Open-world learning · Vision-language models · (Automatic) model evaluation · World models
+    </p>
+    <p class="links">
+      {% for l in site.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% unless forloop.last %} &nbsp;/&nbsp; {% endunless %}{% endfor %}
+    </p>
+  </div>
+  {% if site.photo %}
+  <div class="intro-photo">
+    <img src="{{ site.photo | relative_url }}" alt="{{ site.author }}">
+  </div>
+  {% endif %}
+</section>
+
+{% if site.posts.size > 0 %}
+<section>
+  <h2>Blog posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="muted">({{ post.date | date: "%b %Y" }})</span></li>
+    {% endfor %}
+  </ul>
+  {% if site.posts.size > 5 %}<p><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>{% endif %}
+</section>
+{% endif %}
+
+<section>
+  <h2>Publications</h2>
+  <p class="muted small">* equal contribution</p>
+  {% for p in site.data.publications %}
+  <div class="pub{% if p.highlight %} highlight{% endif %}">
+    {% if p.image %}
+    <div class="pub-img"><img src="{{ p.image | relative_url }}" alt=""></div>
+    {% endif %}
+    <div class="pub-text">
+      <span class="pub-title">{{ p.title }}</span><br>
+      {{ p.authors }}<br>
+      <em>{{ p.venue }}</em><br>
+      {% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}
+      {% if p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="edu">
+    <div><strong>Integrated M.S./Ph.D. student</strong>, Department of Statistics and Data Science, Yonsei University</div>
+    <div class="muted">2022 – Present</div>
+  </div>
+  <div class="edu">
+    <div><strong>B.S.</strong>, Department of Applied Statistics, Yonsei University</div>
+    <div class="muted">2016 – 2022</div>
+  </div>
+</section>

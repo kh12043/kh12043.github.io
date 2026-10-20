@@ -1,13 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
-end
-
-gem 'github-pages'
-gem 'connection_pool', '2.5.0'
+# GitHub Pages와 같은 버전으로 로컬 미리보기
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"

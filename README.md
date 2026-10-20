@@ -1,101 +1,57 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# kh12043.github.io
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+Jon Barron 스타일 메인 페이지에 Jekyll 블로그를 붙인 구조입니다.
+GitHub Pages가 Jekyll을 자동으로 빌드해 주므로 별도 설정 없이 push만 하면 배포됩니다.
 
-# Getting Started
+## 처음 한 번만 하는 일
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- 프로필 사진: `images/`에 사진을 넣고 `_config.yml`의 `photo:` 줄 주석을 풀어 주세요.
+- 링크 추가(Google Scholar 등): `_config.yml`의 `links`에 한 줄씩 추가.
 
-See more info at https://academicpages.github.io/
+## 평소에 하는 일
 
-### Additional Tutorials
+| 하고 싶은 것 | 방법 |
+| --- | --- |
+| 블로그 글 쓰기 | `_drafts/example-post.md`를 복사해 `_posts/YYYY-MM-DD-제목.md`로 저장 (`_posts` 폴더가 없으면 새로 만들기) |
+| 논문 추가 | `_data/publications.yml` 맨 위에 블록 하나 복사해 붙이기 |
+| 링크 추가/수정 | `_config.yml`의 `links` |
+| 이미지 | `images/` 폴더에 넣고 `/images/파일명`으로 참조 |
 
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
+글 머리말(front matter)에서 쓸 수 있는 옵션:
 
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
+```yaml
+---
+layout: post
+title: "글 제목"
+description: "한 줄 요약 (공유 카드와 블로그 목록에 표시)"
+image: /images/대표이미지.jpg   # 공유 카드 이미지 (선택)
+math: true                     # 수식 쓸 때만
+---
 ```
 
-You should now be able to access the website from `localhost:4000`.
+## 자동으로 되는 것
 
-### Using the DevContainer in VS Code
+- 첫 글을 올리면 메인 페이지에 "Blog posts" 섹션과 푸터의 Blog/RSS 링크가 자동으로 나타남 (`/blog/`에 전체 목록)
+- `/feed.xml` RSS 피드
+- 트위터/링크드인 공유 카드용 Open Graph 메타태그
+- 다크 모드, 모바일 레이아웃
+- 수식 (KaTeX): 글 머리말에 `math: true`를 넣고 `$$...$$`로 감싸요. 문단 안에 쓰면 인라인, 줄을 따로 쓰면 블록 수식이 돼요.
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+## 로컬에서 미리보기 (선택)
 
-# Maintenance
+Ruby가 설치되어 있다면:
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+```bash
+bundle install
+bundle exec jekyll serve
+# http://localhost:4000
+```
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
+## 커스텀 도메인 (선택)
 
-## Bugfixes and enhancements
+도메인을 산 뒤 저장소 루트에 `CNAME` 파일을 만들고 도메인 한 줄(예: `yourname.com`)을 적습니다.
+DNS에는 GitHub Pages IP로 A 레코드를 등록하고, `_config.yml`의 `url`도 바꿔 주세요.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
+## 예전 주소
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+템플릿을 바꾸면서 `/about/`, `/about.html`, `/cv/`는 메인 페이지로 이동하도록 해 뒀어요 (`about/`, `about.html`, `cv/`).

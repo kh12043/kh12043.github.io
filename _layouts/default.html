@@ -1,31 +1,16 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+  <main class="container">
     {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+    <footer>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      {% if site.posts.size > 0 %} · <a href="{{ '/blog/' | relative_url }}">Blog</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>{% endif %}
+      <br>Template adapted from <a href="https://github.com/jonbarron/website">Jon Barron</a>.
+    </footer>
+  </main>
+</body>
 </html>
