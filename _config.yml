@@ -9,6 +9,13 @@ lang: en
 # 프로필 사진: images/ 폴더에 사진을 넣고 아래 주석을 풀면 메인 페이지 오른쪽에 표시돼요.
 # photo: /images/profile.jpg
 
+# 상단 메뉴. CV 페이지 등을 만들면 같은 형식으로 한 줄씩 추가하면 돼요.
+nav:
+  - name: Home
+    url: /
+  - name: Blog
+    url: /blog/
+
 # 링크 (메인 페이지 소개 아래에 표시)
 # Google Scholar 등을 추가하려면 같은 형식으로 한 줄씩 추가하면 돼요.
 links:
