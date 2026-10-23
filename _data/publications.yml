@@ -7,6 +7,7 @@
 - title: "Enhancing Continual Learning of Vision-Language Models via Dynamic Prefix Weighting"
   authors: "Hyeonseo Jang, <b>Hyuk Kwon</b>, Kibok Lee"
   venue: "CVPR 2026"
+  summary: "Gives each prefix its own input-dependent weight, so vision-language models adapt only where needed when learning new domains and classes over time."
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2604.18075
@@ -14,6 +15,7 @@
 - title: "Automated Model Evaluation for Object Detection via Prediction Consistency and Reliability"
   authors: "Seungju Yoo, <b>Hyuk Kwon</b>, Joong-Won Hwang, Kibok Lee"
   venue: "ICCV 2025 (Oral)"
+  summary: "Estimates how well an object detector performs on new data without any labels, by checking how consistent and reliable its boxes are before and after NMS."
   highlight: true
   links:
     - name: arXiv
@@ -22,6 +24,7 @@
 - title: "Rethinking Open-World Semi-Supervised Learning: Distribution Mismatch and Inductive Inference"
   authors: "Seongheon Park*, <b>Hyuk Kwon*</b>, Kwanghoon Sohn, Kibok Lee"
   venue: "CVPR Workshops 2024"
+  summary: "Revisits open-world semi-supervised learning under realistic conditions: mismatched class distributions between labeled and unlabeled data, and evaluation on unseen test data."
   links:
     - name: arXiv
       url: https://arxiv.org/abs/2405.20829
