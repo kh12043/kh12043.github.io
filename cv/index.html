@@ -2,14 +2,14 @@
 layout: default
 title: CV
 ---
-{% assign cv_file = site.static_files | where: "path", "/files/cv.pdf" | first %}
+{% assign cv_file = site.static_files | where: "path", "/cv/cv.pdf" | first %}
 <h1 class="post-title">CV</h1>
 {% if cv_file %}
 <p class="cv-actions">
-  <a href="{{ '/files/cv.pdf' | relative_url }}">Download PDF</a>
+  <a href="{{ '/cv/cv.pdf' | relative_url }}">Download PDF</a>
 </p>
-<object class="cv-frame" data="{{ '/files/cv.pdf' | relative_url }}#view=FitH" type="application/pdf">
-  <p>Your browser can't show the PDF here. <a href="{{ '/files/cv.pdf' | relative_url }}">Open the CV</a> instead.</p>
+<object class="cv-frame" data="{{ '/cv/cv.pdf' | relative_url }}#view=FitH" type="application/pdf">
+  <p>Your browser can't show the PDF here. <a href="{{ '/cv/cv.pdf' | relative_url }}">Open the CV</a> instead.</p>
 </object>
 {% else %}
 <p class="muted">Coming soon.</p>
