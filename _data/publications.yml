@@ -15,7 +15,7 @@
 
 - title: "Automated Model Evaluation for Object Detection via Prediction Consistency and Reliability"
   authors: "Seungju Yoo, <b>Hyuk Kwon</b>, Joong-Won Hwang, Kibok Lee"
-  venue: "ICCV 2025 (Oral)"
+  venue: "ICCV 2025 (<b>Oral</b>)"
   award: "Best Paper Award Candidate"
   summary: "Estimates how well an object detector performs on new data without any labels, by checking how consistent and reliable its boxes are before and after NMS."
   highlight: true
