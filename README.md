@@ -16,6 +16,7 @@ GitHub Pages가 Jekyll을 자동으로 빌드해 주므로 별도 설정 없이 
 | 논문 추가 | `_data/publications.yml` 맨 위에 블록 하나 복사해 붙이기 |
 | 링크 추가/수정 | `_config.yml`의 `links` |
 | 이미지 | `images/` 폴더에 넣고 `/images/파일명`으로 참조 |
+| CV 올리기/교체 | PDF를 `files/cv.pdf`라는 이름으로 넣고 push (상단 CV 메뉴에 자동 표시) |
 
 글 머리말(front matter)에서 쓸 수 있는 옵션:
 
@@ -54,4 +55,4 @@ DNS에는 GitHub Pages IP로 A 레코드를 등록하고, `_config.yml`의 `url`
 
 ## 예전 주소
 
-템플릿을 바꾸면서 `/about/`, `/about.html`, `/cv/`는 메인 페이지로 이동하도록 해 뒀어요 (`about/`, `about.html`, `cv/`).
+템플릿을 바꾸면서 `/about/`, `/about.html`은 메인 페이지로 이동하도록 해 뒀어요. `/cv/`는 CV 페이지예요.
