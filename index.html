@@ -27,7 +27,7 @@ layout: default
 </section>
 
 <section>
-  <h2>News</h2>
+  <h2>📰 News</h2>
   <ul class="news">
     {% for n in site.data.news limit:5 %}
     <li><span class="news-date">{{ n.date }}</span> <span>{{ n.text }}</span></li>
@@ -36,7 +36,7 @@ layout: default
 </section>
 
 <section>
-  <h2>Work Experience</h2>
+  <h2>💼 Work Experience</h2>
   <div class="edu">
     <div><strong>Research Intern</strong>, Ludo Robotics (Seoul)</div>
     <div class="muted">Sep 2026 – Present</div>
@@ -44,7 +44,7 @@ layout: default
 </section>
 
 <section>
-  <h2>Publications</h2>
+  <h2>📝 Publications</h2>
   <p class="muted small">* equal contribution</p>
   {% for p in site.data.publications %}
   <div class="pub{% if p.highlight %} highlight{% endif %}">
@@ -63,7 +63,7 @@ layout: default
 </section>
 
 <section>
-  <h2>Education</h2>
+  <h2>🎓 Education</h2>
   <div class="edu">
     <div><strong>Integrated M.S./Ph.D. student</strong>, Department of Statistics and Data Science, Yonsei University</div>
     <div class="muted">2022 – Present</div>
