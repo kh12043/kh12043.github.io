@@ -13,6 +13,7 @@ GitHub Pages가 Jekyll을 자동으로 빌드해 주므로 별도 설정 없이 
 | 하고 싶은 것 | 방법 |
 | --- | --- |
 | 블로그 글 쓰기 | `_drafts/example-post.md`를 복사해 `_posts/YYYY-MM-DD-제목.md`로 저장 (`_posts` 폴더가 없으면 새로 만들기) |
+| 소식(News) 추가 | `_data/news.yml` 맨 위에 한 줄 추가 (Home에는 최신 5개) |
 | 논문 추가 | `_data/publications.yml` 맨 위에 블록 하나 복사해 붙이기 |
 | 링크 추가/수정 | `_config.yml`의 `links` |
 | 이미지 | `images/` 폴더에 넣고 `/images/파일명`으로 참조 |

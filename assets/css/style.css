@@ -74,6 +74,11 @@ h2 { font-size: 22px; font-weight: 400; margin: 40px 0 12px; }
 .pub-title { font-weight: 700; font-size: 16px; }
 .pub-summary { margin: 6px 0 0; }
 
+/* ── 소식 ── */
+.news { list-style: none; padding: 0; margin: 0; }
+.news li { display: flex; gap: 16px; padding: 3px 0; }
+.news-date { flex-shrink: 0; width: 72px; color: var(--muted); }
+
 /* ── 학력 ── */
 .edu { display: flex; justify-content: space-between; gap: 16px; padding: 4px 0; }
 .edu .muted { white-space: nowrap; }
@@ -118,6 +123,7 @@ footer { margin-top: 56px; text-align: center; font-size: 13px; color: var(--mut
   .pub { flex-direction: column; gap: 10px; }
   .pub-img { width: 100%; max-width: 320px; }
   .edu { flex-direction: column; gap: 0; }
+  .news li { flex-direction: column; gap: 0; }
   .post-title { font-size: 26px; }
   .cv-frame { height: 75vh; }
 }
