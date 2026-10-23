@@ -30,7 +30,7 @@ layout: default
   <h2>News</h2>
   <ul class="news">
     {% for n in site.data.news limit:5 %}
-    <li><span class="news-date">{{ n.date }}</span><span>{{ n.text }}</span></li>
+    <li><span class="news-date">{{ n.date }}</span> <span>{{ n.text }}</span></li>
     {% endfor %}
   </ul>
 </section>
@@ -54,7 +54,7 @@ layout: default
     <div class="pub-text">
       <span class="pub-title">{{ p.title }}</span><br>
       {{ p.authors }}<br>
-      <em>{{ p.venue }}</em><br>
+      <em>{{ p.venue }}</em>{% if p.award %} <strong class="award">{{ p.award }}</strong>{% endif %}<br>
       {% for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}
       {% if p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
     </div>

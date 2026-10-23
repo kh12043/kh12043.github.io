@@ -4,6 +4,7 @@
   --link: #1772d0;
   --link-hover: #f09228;
   --highlight: #e3f2fd;
+  --award: #c62828;
   --code-bg: #f5f5f5;
   --border: #e5e5e5;
   --bg: #ffffff;
@@ -15,6 +16,7 @@
     --link: #6cb0f5;
     --link-hover: #f5a84c;
     --highlight: #15283a;
+    --award: #ff8a80;
     --code-bg: #1f1f1f;
     --border: #333;
     --bg: #121212;
@@ -72,6 +74,7 @@ h2 { font-size: 22px; font-weight: 400; margin: 40px 0 12px; }
 .pub-img { width: 160px; flex-shrink: 0; }
 .pub-img img { width: 100%; border-radius: 4px; }
 .pub-title { font-weight: 700; font-size: 16px; }
+.award { color: var(--award); margin-left: 8px; }
 .pub-summary { margin: 6px 0 0; }
 
 /* ── 소식 ── */

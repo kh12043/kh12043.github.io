@@ -3,6 +3,7 @@
 #   image:     대표 그림 (선택). images/ 폴더에 넣고 경로를 적으면 왼쪽에 썸네일이 생겨요.
 #   highlight: true 로 두면 배경색이 들어간 강조 행으로 표시돼요.
 #   summary:   한두 문장 요약 (선택)
+#   award:     수상 등 (선택). 학회 이름 옆에 굵은 빨간 글씨로 표시돼요.
 
 - title: "Enhancing Continual Learning of Vision-Language Models via Dynamic Prefix Weighting"
   authors: "Hyeonseo Jang, <b>Hyuk Kwon</b>, Kibok Lee"
@@ -15,6 +16,7 @@
 - title: "Automated Model Evaluation for Object Detection via Prediction Consistency and Reliability"
   authors: "Seungju Yoo, <b>Hyuk Kwon</b>, Joong-Won Hwang, Kibok Lee"
   venue: "ICCV 2025 (Oral)"
+  award: "Best Paper Award Candidate"
   summary: "Estimates how well an object detector performs on new data without any labels, by checking how consistent and reliable its boxes are before and after NMS."
   highlight: true
   links:
