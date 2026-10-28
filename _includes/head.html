@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% seo %}
+{% seo title=false %}
+<title>{% if page.title %}{{ page.title }} – {{ site.author }}{% else %}{{ site.author }}{% endif %}</title>
 {% feed_meta %}
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
