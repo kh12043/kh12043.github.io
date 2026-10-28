@@ -5,6 +5,13 @@
 #   summary:   한두 문장 요약 (선택)
 #   award:     수상 등 (선택). 학회 이름 옆에 굵은 빨간 글씨로 표시돼요.
 
+- title: "Good Rankings, Poor Choices? Rethinking Language-Only Vision-Language Model Selection"
+  authors: "<b>Hyuk Kwon</b>, Jaebyeong Jeon, Hyeonseo Jang, Kibok Lee"
+  venue: "Preprint"
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2610.34685
+
 - title: "Enhancing Continual Learning of Vision-Language Models via Dynamic Prefix Weighting"
   authors: "Hyeonseo Jang, <b>Hyuk Kwon</b>, Kibok Lee"
   venue: "CVPR 2026"
