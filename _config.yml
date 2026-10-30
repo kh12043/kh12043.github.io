@@ -1,7 +1,7 @@
 # ── 사이트 기본 정보 (여기만 고치면 전체에 반영돼요) ──
 title: "Hyuk Kwon"
 author: "Hyuk Kwon"
-description: "Ph.D. student at Yonsei University Machine Learning Lab, working on open-world learning, vision-language models, model evaluation, and world models."
+description: "Ph.D. student at Yonsei University Machine Learning Lab, working on how visual models adapt and how to evaluate them, with recent interests in world models and physical AI."
 url: "https://kh12043.github.io"
 baseurl: ""
 lang: en
